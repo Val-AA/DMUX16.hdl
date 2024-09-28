@@ -1,0 +1,23 @@
+CHIP DMUX16 {
+    IN in[16], sel;
+    OUT a[16], b[16];
+
+    PARTS:
+    // Multiplexor para cada bit
+    DMUX(a=in[0], sel=sel, out=a[0], out=b[0]);
+    DMUX(a=in[1], sel=sel, out=a[1], out=b[1]);
+    DMUX(a=in[2], sel=sel, out=a[2], out=b[2]);
+    DMUX(a=in[3], sel=sel, out=a[3], out=b[3]);
+    DMUX(a=in[4], sel=sel, out=a[4], out=b[4]);
+    DMUX(a=in[5], sel=sel, out=a[5], out=b[5]);
+    DMUX(a=in[6], sel=sel, out=a[6], out=b[6]);
+    DMUX(a=in[7], sel=sel, out=a[7], out=b[7]);
+    DMUX(a=in[8], sel=sel, out=a[8], out=b[8]);
+    DMUX(a=in[9], sel=sel, out=a[9], out=b[9]);
+    DMUX(a=in[10], sel=sel, out=a[10], out=b[10]);
+    DMUX(a=in[11], sel=sel, out=a[11], out=b[11]);
+    DMUX(a=in[12], sel=sel, out=a[12], out=b[12]);
+    DMUX(a=in[13], sel=sel, out=a[13], out=b[13]);
+    DMUX(a=in[14], sel=sel, out=a[14], out=b[14]);
+    DMUX(a=in[15], sel=sel, out=a[15], out=b[15]);
+}
